@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+	font-family:'FonteLogo' ;
+	src: url(../_fonts/bubblegum-sans-regular.otf);
+	
+}
+
+body{ 
+	font-family: Arial, sans-serif;
+	background-color: #dddddd; /*cinza*/
+	color: rgba(0,0,0,1);
+	
+}
+
+div#interface{
+	width: 1100px;
+	background-color: #ffffff; /*branco*/
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 4px black;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+p{
+		text-align: justify;
+	text-indent: 50px;
+}
+
+a{
+	color: #606060;
+	text-decoration: none;
+		
+}
+
+a:hover{
+	
+	text-decoration: underline;
+}
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1050px;
+	top: 65px;
+	
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 95px;
+	
+}
+header#cabecalho h1{
+	font-family: 'FonteLogo' sans-serif;
+	font-size: 30pt;/*pt é pontos */
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);/*1o deslocamento horizontal, 2o deslocamento vertical, 3o espalhamento, e .6 para definir tranparencia da cor definida*/
+	padding: 0px;
+	margin-bottom: 0px;
+	
+}
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+/* Formatação de Imagens com legendas */
+figure.foto-legenda {
+	position: relative;
+	border: 6px solid white;
+	box-shadow: 1px 1px 4px black;
+	
+}
+
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+			
+}
+
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 30%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+figure.foto-legenda:hover figcaption{
+	
+	opacity: 1;
+}
+
+/* Formtanação do Menu*/
+nav#menu{
+	
+	display: block; /*para o menu flutuar*/
+}
+nav#menu ul {
+	list-style: none; /*tirar marcador*/
+	text-transform: uppercase; /*todas as letras em maiúsculo*/
+	position: absolute; /* faz o menu flutuar pelo site todo, fora do seu container*/
+	top: -20px; /*distanciamento entre o menu e a margem entre o site e o navegador*/
+	left: 300px;
+}
+
+nav#menu li{
+	display: inline-block; /* coloca os itens na horizontal*/
+	background-color: lightgrey; /*cor de fundo dos itens*/
+	padding: 10px; /*define o tamanho da cor sobre o item*/
+	margin:2px; /*distanciamento entre os itens da lista*/
+}
+
+nav#menu li:hover{ /*efeito que terá quando passar o mouse por cima da lista do menu*/
+	background-color: grey;
+	
+}
+
+nav#menu h1{
+	display: none; /*esconde o h1 do site*/
+	 
+}
+
+nav#menu a{
+	
+	color: black; /*muda a cor dos itens da lista do menu*/
+	text-decoration: none; /*tira o sublinhado dos itens da lista do menu*/
+}
+
+nav#menu a:hover{ /*muda a cor do texto dos itens da lista quando passar o mouse*/
+	
+	color:white;
+	
+}
+
+section#corpo{
+	display: block;
+	width: 550px;
+	float: left; /*irá fazer com que o testo fique do lado esquerdo*/
+	border-right: 1px solid #606060; /*parâmetros: 1º largura da linha, tipo de linha, cor da linha*/
+	padding-right: 15px;
+	
+}
+
+article#noticia-principal h2{
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin: 0px;
+	
+}
+
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+}
+
+
+header#cabecalho-artigo h3{
+	font-size: 12px;
+	color: #606060;
+	margin-top: 0px;	
+}
+
+.direita{
+	text-align: right;
+	
+}
+
+
+table#tabelaspec{
+	border: 1px solid #606060;
+	border-spacing: 0px; /*espaço entre as bordas*/
+	margin-left: auto; /*as margens left e right auto são para centralizar a tabela*/
+	margin-right: auto;
+}
+
+table#tabelaspec td{
+	
+	border: 1px solid #606060;
+	padding: 10px; /*espaço entre as informações da tebela e as bordas*/
+	text-align: center;
+	vertical-align: middle; /*centralizar*/
+	box-shadow: 4.5px 4.5px 4.5px rgba(0,0,0,.5);
+}
+
+table#tabelaspec td.ce{
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight:  bold;
+	
+}
+
+table#tabelaspec td.cd{
+	background-color: #cecece;
+	
+}
+
+table#tabelaspec caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+	
+}
+
+table#tabelaspec caption span{ 
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+	
+}
+aside#lateral{
+	display:block;
+	width: 510px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+	
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20p;
+	color: #606060;
+	margin-top: 0px;
+	
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size:13pt;
+	color: #ffffff;
+	padding: 5px;
+	
+}
+
+footer#rodape{
+	clear: both; /*irá mostrar o conteudo fora da divisão do section e aside.*/
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+	text-align: center;
+	
+}
+
+
